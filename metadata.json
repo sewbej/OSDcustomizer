@@ -1,0 +1,11 @@
+{
+    "uuid": "OSDcustomizer@sewbej",
+    "name": "OSD Customizer",
+    "author": "sewbej",
+    "version": "1.0.0",
+    "description": "Customize the appearance and behavior of the OSD.",
+    "url": "https://github.com/sewbej/OSDcustomizer",
+    "cinnamon-version": [
+        "6.4", "6.6"
+    ]
+}
