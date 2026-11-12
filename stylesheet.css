@@ -5,7 +5,7 @@
   margin: 0;
 }
 
-.media-keys-osd.osd-style-pane-azure {
+.media-keys-osd.osd-style-plexi-azure {
   background-gradient-direction: vertical;
   background-gradient-start: rgba(71, 163, 255, 0.051) !important;
   background-gradient-end: rgba(71, 163, 255, 0.051) !important;
@@ -15,8 +15,10 @@
   border-left: 1px;
   border-right: 2px;
   border-bottom: 2px;
+  margin: 6px;
+  padding: 0px;
 }
-.media-keys-osd.osd-style-pane-cinnamon {
+.media-keys-osd.osd-style-plexi-cinnamon {
   background-gradient-direction: vertical;
   background-gradient-start: rgba(255, 102, 25, 0.051) !important;
   background-gradient-end: rgba(255, 102, 25, 0.051) !important;
@@ -26,8 +28,10 @@
   border-left: 1px;
   border-right: 2px;
   border-bottom: 2px;
+  margin: 6px;
+  padding: 0px;
 }
-.media-keys-osd.osd-style-pane-crimson {
+.media-keys-osd.osd-style-plexi-crimson {
   background-gradient-direction: vertical;
   background-gradient-start: rgba(255, 87, 129, 0.051) !important;
   background-gradient-end: rgba(255, 87, 129, 0.051) !important;
@@ -37,8 +41,10 @@
   border-left: 1px;
   border-right: 2px;
   border-bottom: 2px;
+  margin: 6px;
+  padding: 0px;
 }
-.media-keys-osd.osd-style-pane-falcon {
+.media-keys-osd.osd-style-plexi-falcon {
   background-gradient-direction: vertical;
   background-gradient-start: rgba(255, 199, 219, 0.051) !important;
   background-gradient-end: rgba(255, 199, 219, 0.051) !important;
@@ -48,8 +54,10 @@
   border-left: 1px;
   border-right: 2px;
   border-bottom: 2px;
+  margin: 6px;
+  padding: 0px;
 }
-.media-keys-osd.osd-style-pane-grey {
+.media-keys-osd.osd-style-plexi-grey {
   background-gradient-direction: vertical;
   background-gradient-start: rgba(254, 254, 254, 0.051) !important;
   background-gradient-end: rgba(254, 254, 254, 0.051) !important;
@@ -59,8 +67,10 @@
   border-left: 1px;
   border-right: 2px;
   border-bottom: 2px;
+  margin: 6px;
+  padding: 0px;
 }
-.media-keys-osd.osd-style-pane-mint {
+.media-keys-osd.osd-style-plexi-mint {
   background-gradient-direction: vertical;
   background-gradient-start: rgba(76, 255, 160, 0.051) !important;
   background-gradient-end: rgba(76, 255, 160, 0.051) !important;
@@ -70,8 +80,10 @@
   border-left: 1px;
   border-right: 2px;
   border-bottom: 2px;
+  margin: 6px;
+  padding: 0px;
 }
-.media-keys-osd.osd-style-pane-nordic {
+.media-keys-osd.osd-style-plexi-nordic {
   background-gradient-direction: vertical;
   background-gradient-start: rgba(184, 205, 255, 0.051) !important;
   background-gradient-end: rgba(184, 205, 255, 0.051) !important;
@@ -81,8 +93,10 @@
   border-left: 1px;
   border-right: 2px;
   border-bottom: 2px;
+  margin: 6px;
+  padding: 0px;
 }
-.media-keys-osd.osd-style-pane-steel {
+.media-keys-osd.osd-style-plexi-steel {
   background-gradient-direction: vertical;
   background-gradient-start: rgba(229, 229, 254, 0.051) !important;
   background-gradient-end: rgba(229, 229, 254, 0.051) !important;
@@ -92,8 +106,10 @@
   border-left: 1px;
   border-right: 2px;
   border-bottom: 2px;
+  margin: 6px;
+  padding: 0px;
 }
-.media-keys-osd.osd-style-pane-violet {
+.media-keys-osd.osd-style-plexi-violet {
   background-gradient-direction: vertical;
   background-gradient-start: rgba(255, 130, 255, 0.051) !important;
   background-gradient-end: rgba(255, 130, 255, 0.051) !important;
@@ -103,6 +119,8 @@
   border-left: 1px;
   border-right: 2px;
   border-bottom: 2px;
+  margin: 6px;
+  padding: 0px;
 }
 
 .media-keys-osd.osd-style-tempered-azure {
@@ -221,4 +239,213 @@
   border-bottom: 2px;
   margin: 6px;
   padding: 0px;
+}
+
+.media-keys-osd.osd-style-pane-azure {
+  background-gradient-direction: vertical;
+  background-gradient-start: rgba(53, 122, 191, 0.2) !important;
+  background-gradient-end: rgba(0, 5, 23, 0.3) !important;
+  box-shadow: -2px -2px 1.2px 3px rgba(0, 5, 23, 0.4) inset;
+  margin: 6px;
+  padding: 0px;
+  border-image: url("backgrounds/pane/pane-azure.webp") 10 10 10 10;
+}
+.media-keys-osd.osd-style-pane-cinnamon {
+  background-gradient-direction: vertical;
+  background-gradient-start: rgba(191, 76, 19, 0.2) !important;
+  background-gradient-end: rgba(15, 5, 0, 0.3) !important;
+  box-shadow: -2px -2px 1.2px 3px rgba(15, 5, 0, 0.4) inset;
+  margin: 6px;
+  padding: 0px;
+  border-image: url("backgrounds/pane/pane-cinnamon.webp") 10 10 10 10;
+}
+.media-keys-osd.osd-style-pane-crimson {
+  background-gradient-direction: vertical;
+  background-gradient-start: rgba(174, 59, 90, 0.2) !important;
+  background-gradient-end: rgba(13, 0, 3, 0.3) !important;
+  box-shadow: -2px -2px 1.2px 3px rgba(13, 0, 3, 0.4) inset;
+  margin: 6px;
+  padding: 0px;
+  border-image: url("backgrounds/pane/pane-crimson.webp") 10 10 10 10;
+}
+.media-keys-osd.osd-style-pane-falcon {
+  background-gradient-direction: vertical;
+  background-gradient-start: rgba(144, 112, 124, 0.2) !important;
+  background-gradient-end: rgba(13, 4, 7, 0.3) !important;
+  box-shadow: -2px -2px 1.2px 3px rgba(13, 4, 7, 0.4) inset;
+  margin: 6px;
+  padding: 0px;
+  border-image: url("backgrounds/pane/pane-falcon.webp") 10 10 10 10;
+}
+.media-keys-osd.osd-style-pane-grey {
+  background-gradient-direction: vertical;
+  background-gradient-start: rgba(115, 115, 115, 0.2) !important;
+  background-gradient-end: rgba(10, 10, 10, 0.3) !important;
+  box-shadow: -2px -2px 1.2px 3px rgba(10, 10, 10, 0.4) inset;
+  margin: 6px;
+  padding: 0px;
+  border-image: url("backgrounds/pane/pane-grey.webp") 10 10 10 10;
+}
+.media-keys-osd.osd-style-pane-mint {
+  background-gradient-direction: vertical;
+  background-gradient-start: rgba(43, 143, 90, 0.2) !important;
+  background-gradient-end: rgba(0, 13, 6, 0.3) !important;
+  box-shadow: -2px -2px 1.2px 3px rgba(0, 13, 6, 0.4) inset;
+  margin: 6px;
+  padding: 0px;
+  border-image: url("backgrounds/pane/pane-mint.webp") 10 10 10 10;
+}
+.media-keys-osd.osd-style-pane-nordic {
+  background-gradient-direction: vertical;
+  background-gradient-start: rgba(111, 124, 154, 0.2) !important;
+  background-gradient-end: rgba(4, 7, 15, 0.3) !important;
+  box-shadow: -2px -2px 1.2px 3px rgba(4, 7, 15, 0.4) inset;
+  margin: 6px;
+  padding: 0px;
+  border-image: url("backgrounds/pane/pane-nordic.webp") 10 10 10 10;
+}
+.media-keys-osd.osd-style-pane-steel {
+  background-gradient-direction: vertical;
+  background-gradient-start: rgba(104, 104, 115, 0.2) !important;
+  background-gradient-end: rgba(8, 8, 10, 0.3) !important;
+  box-shadow: -2px -2px 1.2px 3px rgba(8, 8, 10, 0.4) inset;
+  margin: 6px;
+  padding: 0px;
+  border-image: url("backgrounds/pane/pane-steel.webp") 10 10 10 10;
+}
+.media-keys-osd.osd-style-pane-violet {
+  background-gradient-direction: vertical;
+  background-gradient-start: rgba(143, 74, 143, 0.2) !important;
+  background-gradient-end: rgba(13, 0, 13, 0.3) !important;
+  box-shadow: -2px -2px 1.2px 3px rgba(13, 0, 13, 0.4) inset;
+  margin: 6px;
+  padding: 0px;
+  border-image: url("backgrounds/pane/pane-violet.webp") 10 10 10 10;
+}
+
+.media-keys-osd.osd-style-oxygene-azure {
+  background-gradient-direction: vertical;
+  background-gradient-start: rgba(0, 24, 112, 0.4) !important;
+  background-gradient-end: rgba(0, 13, 61, 0.4) !important;
+  box-shadow: -1px -2px 1.2px 1.2px rgba(0, 5, 23, 0.6) inset;
+  border-radius: 12px;
+  margin: 6px;
+  padding: 4px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 2px;
+  border-bottom: 2px;
+  border-image: url("backgrounds/oxygene/oxygene-azure.webp") 30 30 30 30;
+}
+.media-keys-osd.osd-style-oxygene-cinnamon {
+  background-gradient-direction: vertical;
+  background-gradient-start: rgba(115, 38, 0, 0.4) !important;
+  background-gradient-end: rgba(64, 21, 0, 0.4) !important;
+  box-shadow: -1px -2px 1.2px 1.2px rgba(15, 5, 0, 0.6) inset;
+  border-radius: 12px;
+  margin: 6px;
+  padding: 4px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 2px;
+  border-bottom: 2px;
+  border-image: url("backgrounds/oxygene/oxygene-cinnamon.webp") 30 30 30 30;
+}
+.media-keys-osd.osd-style-oxygene-crimson {
+  background-gradient-direction: vertical;
+  background-gradient-start: rgba(103, 0, 28, 0.4) !important;
+  background-gradient-end: rgba(52, 0, 14, 0.4) !important;
+  box-shadow: -1px -2px 1.2px 1.2px rgba(13, 0, 3, 0.6) inset;
+  border-radius: 12px;
+  margin: 6px;
+  padding: 4px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 2px;
+  border-bottom: 2px;
+  border-image: url("backgrounds/oxygene/oxygene-crimson.webp") 30 30 30 30;
+}
+.media-keys-osd.osd-style-oxygene-falcon {
+  background-gradient-direction: vertical;
+  background-gradient-start: rgba(85, 32, 52, 0.4) !important;
+  background-gradient-end: rgba(34, 13, 21, 0.4) !important;
+  box-shadow: -1px -2px 1.2px 1.2px rgba(13, 4, 7, 0.6) inset;
+  border-radius: 12px;
+  margin: 6px;
+  padding: 4px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 2px;
+  border-bottom: 2px;
+  border-image: url("backgrounds/oxygene/oxygene-falcon.webp") 30 30 30 30;
+}
+.media-keys-osd.osd-style-oxygene-grey {
+  background-gradient-direction: vertical;
+  background-gradient-start: rgba(69, 69, 69, 0.4) !important;
+  background-gradient-end: rgba(18, 18, 18, 0.4) !important;
+  box-shadow: -1px -2px 1.2px 1.2px rgba(10, 10, 10, 0.6) inset;
+  border-radius: 12px;
+  margin: 6px;
+  padding: 4px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 2px;
+  border-bottom: 2px;
+  border-image: url("backgrounds/oxygene/oxygene-grey.webp") 30 30 30 30;
+}
+.media-keys-osd.osd-style-oxygene-mint {
+  background-gradient-direction: vertical;
+  background-gradient-start: rgba(0, 82, 39, 0.4) !important;
+  background-gradient-end: rgba(0, 31, 15, 0.4) !important;
+  box-shadow: -1px -2px 1.2px 1.2px rgba(0, 13, 6, 0.6) inset;
+  border-radius: 12px;
+  margin: 6px;
+  padding: 4px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 2px;
+  border-bottom: 2px;
+  border-image: url("backgrounds/oxygene/oxygene-mint.webp") 30 30 30 30;
+}
+.media-keys-osd.osd-style-oxygene-nordic {
+  background-gradient-direction: vertical;
+  background-gradient-start: rgba(20, 39, 91, 0.4) !important;
+  background-gradient-end: rgba(9, 17, 40, 0.4) !important;
+  box-shadow: -1px -2px 1.2px 1.2px rgba(4, 7, 15, 0.6) inset;
+  border-radius: 12px;
+  margin: 6px;
+  padding: 4px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 2px;
+  border-bottom: 2px;
+  border-image: url("backgrounds/oxygene/oxygene-nordic.webp") 30 30 30 30;
+}
+.media-keys-osd.osd-style-oxygene-steel {
+  background-gradient-direction: vertical;
+  background-gradient-start: rgba(62, 62, 69, 0.4) !important;
+  background-gradient-end: rgba(16, 16, 18, 0.4) !important;
+  box-shadow: -1px -2px 1.2px 1.2px rgba(8, 8, 10, 0.6) inset;
+  border-radius: 12px;
+  margin: 6px;
+  padding: 4px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 2px;
+  border-bottom: 2px;
+  border-image: url("backgrounds/oxygene/oxygene-steel.webp") 30 30 30 30;
+}
+.media-keys-osd.osd-style-oxygene-violet {
+  background-gradient-direction: vertical;
+  background-gradient-start: rgba(82, 8, 82, 0.4) !important;
+  background-gradient-end: rgba(31, 3, 31, 0.4) !important;
+  box-shadow: -1px -2px 1.2px 1.2px rgba(13, 0, 13, 0.6) inset;
+  border-radius: 12px;
+  margin: 6px;
+  padding: 4px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 2px;
+  border-bottom: 2px;
+  border-image: url("backgrounds/oxygene/oxygene-violet.webp") 30 30 30 30;
 }

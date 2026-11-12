@@ -2,13 +2,36 @@
   "layout": {
     "type": "layout",
     "pages": [
-      "page-appearance-text",
-      "page-appearance-icon",
       "page-appearance-backgd",
       "page-appearance-bar",
+      "page-appearance-text",
+      "page-appearance-icon",
       "page-behavior",
       "page-about"
     ],
+    "page-appearance-backgd": {
+      "type": "page",
+      "title": "Background",
+      "sections": [
+        "section-backgd-enable",
+        "section-backgd-theme",
+        "section-backgd-glass"
+      ]
+    },
+    "page-appearance-bar": {
+      "type": "page",
+      "title": "Level Bar",
+      "sections": [
+        "section-bar-enable",
+        "section-bar",
+        "section-bar-horizontal-continuous",
+        "section-bar-horizontal-segmented",
+        "section-bar-vertical-continuous",
+        "section-bar-vertical-segmented",
+        "section-bar-circular-continuous",
+        "section-bar-circular-segmented"
+      ]
+    },
     "page-appearance-text": {
       "type": "page",
       "title": "Text",
@@ -23,25 +46,12 @@
         "section-icon"
       ]
     },
-    "page-appearance-backgd": {
-      "type": "page",
-      "title": "Background",
-      "sections": [
-        "section-osd-window"
-      ]
-    },
-    "page-appearance-bar": {
-      "type": "page",
-      "title": "Level Bar",
-      "sections": [
-        "section-bar"
-      ]
-    },
     "page-behavior": {
       "type": "page",
-      "title": "Behavior",
+      "title": "Position and Timing",
       "sections": [
-        "section-animations"
+        "section-position",
+        "section-timing"
       ]
     },
     "page-about": {
@@ -51,9 +61,123 @@
         "section-about"
       ]
     },
+    "section-backgd-enable": {
+      "type": "section",
+      "title": "Enable",
+      "keys": [
+        "OSD-backgd-color-custom"
+      ]
+    },
+    "section-backgd-theme": {
+      "type": "section",
+      "title": "Theme",
+    "dependency": "OSD-backgd-color-custom",
+      "keys": [
+        "OSD-theme",
+        "semabe-color",
+        "surface-style-OSD",
+        "OSD-backgd-color1",
+        "OSD-backgd-color2",
+        "OSD-border-color",
+        "OSD-border-thick",
+        "OSD-border-radius",
+        "OSD-width"
+      ]
+    },
+    "section-backgd-glass": {
+      "type": "section",
+      "title": "Blur",
+    "dependency": "OSD-backgd-color-custom",
+      "keys": [
+        "light-refraction",
+        "OSD-backgd-blur"
+      ]
+    },
+    "section-bar-enable": {
+      "type": "section",
+      "title": "Enable",
+      "keys": [
+        "barlevel-custom"
+      ]
+    },
+    "section-bar": {
+      "type": "section",
+      "title": "Appearance",
+      "keys": [
+        "OSD-layout",
+        "barlevel-style",
+        "barlevel-foregd-color-start",
+        "barlevel-foregd-color-end",
+        "barlevel-backgd-color-start",
+        "barlevel-backgd-color-end"
+      ]
+    },
+    "section-bar-horizontal-continuous": {
+      "type": "section",
+      "title": "Continuous horizontal bar",
+    "dependency": "show-section-bar-horizontal-continuous",
+      "keys": [
+        "barlevel-dim",
+        "barlevel-thick",
+        "barlevel-radius"
+      ]
+    },
+    "section-bar-horizontal-segmented": {
+      "type": "section",
+      "title": "Segmented horizontal bar",
+    "dependency": "show-section-bar-horizontal-segmented",
+      "keys": [
+        "barlevel-segment-width",
+        "barlevel-thick",
+        "barlevel-segment-gap",
+        "barlevel-segment-radius"
+      ]
+    },
+    "section-bar-vertical-continuous": {
+      "type": "section",
+      "title": "Continuous vertical bar",
+    "dependency": "show-section-bar-vertical-continuous",
+      "keys": [
+        "barlevel-dim",
+        "barlevel-thick",
+        "barlevel-radius"
+      ]
+    },
+    "section-bar-vertical-segmented": {
+      "type": "section",
+      "title": "Segmented vertical bar",
+    "dependency": "show-section-bar-vertical-segmented",
+      "keys": [
+        "barlevel-segment-width",
+        "barlevel-thick",
+        "barlevel-segment-gap",
+        "barlevel-segment-radius"
+      ]
+    },
+    "section-bar-circular-continuous": {
+      "type": "section",
+      "title": "Continuous circular bar",
+    "dependency": "show-section-bar-circular-continuous",
+      "keys": [
+        "barlevel-dim",
+        "barlevel-thick",
+        "barlevel-radius"
+      ]
+    },
+    "section-bar-circular-segmented": {
+      "type": "section",
+      "title": "Segmented circular bar",
+    "dependency": "show-section-bar-circular-segmented",
+      "keys": [
+        "barlevel-segment-width",
+        "barlevel-thick",
+        "barlevel-segment-gap",
+        "barlevel-segment-radius"
+      ]
+    },
     "section-text": {
       "type": "section",
-      "title": "Text Settings",
+      "title": "Percentage Text",
       "keys": [
         "font-select",
         "font-size",
@@ -66,7 +190,7 @@
     },
     "section-icon": {
       "type": "section",
-      "title": "Icon Settings",
+      "title": "Icon",
       "keys": [
         "icon-size",
         "icon-color-custom",
@@ -74,34 +198,22 @@
         "icon-shadow-color"
       ]
     },
-    "section-osd-window": {
+    "section-position": {
       "type": "section",
-      "title": "Background Style",
+      "title": "Position on Screen",
       "keys": [
-        "OSD-backgd-color-custom",
-        "semabe-color",
-        "OSD-backgd-color1",
-        "OSD-backgd-color2",
-        "OSD-border-color",
-        "surface-style-OSD",
-        "light-refraction",
-        "OSD-backgd-blur",
-        "OSD-width",
-        "OSD-border-thick",
-        "OSD-border-radius"
+        "x-align",
+        "y-align"
       ]
     },
-    "section-bar": {
+    "section-timing": {
       "type": "section",
-      "title": "Custom Level Bar",
+      "title": "Timing and Animations",
       "keys": [
-        "barlevel-custom",
-        "OSD-orientation",
-        "barlevel-backgd-color",
-        "barlevel-foregd-color",
-        "barlevel-dim",
-        "barlevel-thick",
-        "barlevel-radius"
+        "hide-timeout",
+        "fade-in-time",
+        "fade-out-time",
+        "level-time"
       ]
     },
     "section-about": {
@@ -109,26 +221,302 @@
       "title": "Information",
       "keys": [
         "about-label",
-        "website_btn"
-      ]
-    },
-    "section-animations": {
-      "type": "section",
-      "title": "Animations and Position",
-      "keys": [
-        "x-align",
-        "y-align",
-        "level-time",
-        "fade-in-time",
-        "fade-out-time",
-        "hide-timeout"
+        "website_btn",
+        "issue_btn",
+        "donate_btn"
       ]
     }
   },
+
+  "OSD-backgd-color-custom": {
+    "type": "switch",
+    "default": true,
+    "description": "Customize the background",
+    "tooltip": ""
+  },
+  "OSD-theme": {
+    "type": "combobox",
+    "default": "customOSD",
+    "description": "Theme",
+    "options": {
+      "Custom": "customOSD",
+      "Predefined": "predefined",
+      "Current": "disabled"
+    }
+  },
+  "semabe-color": {
+    "type": "combobox",
+    "default": "steel",
+    "description": "Color scheme",
+    "dependency": "OSD-theme=predefined",
+    "tooltip": "Ready-made color scheme. It is combined with the surface style selected below.",
+    "options": {
+      "Azure": "azure",
+      "Cinnamon": "cinnamon",
+      "Crimson": "crimson",
+      "Falcon": "falcon",
+      "Grey": "grey",
+      "Mint": "mint",
+      "Nordic": "nordic",
+      "Steel": "steel",
+      "Violet": "violet"
+    }
+  },
+  "surface-style-OSD": {
+    "type": "combobox",
+    "default": "pane",
+    "dependency": "OSD-theme=predefined",
+    "description": "Surface style",
+    "tooltip": "Surface finish applied to the selected color scheme.",
+    "options": {
+      "Glass pane": "pane",
+      "Plexiglass": "plexi",
+      "Tempered glass": "tempered",
+      "Oxygene": "oxygene"
+    }
+  },
+  "OSD-backgd-color1": {
+    "type": "colorchooser",
+    "default": "rgba(0,0,0,0.3)",
+    "dependency": "OSD-theme=customOSD",
+    "description": "Gradient color start",
+    "tooltip": "Top color of the background gradient."
+  },
+  "OSD-backgd-color2": {
+    "type": "colorchooser",
+    "default": "rgba(0,0,0,0.3)",
+    "dependency": "OSD-theme=customOSD",
+    "description": "Gradient color end",
+    "tooltip": "Bottom color of the background gradient."
+  },
+  "OSD-border-color": {
+    "type": "colorchooser",
+    "default": "rgba(255,255,255,0.8)",
+    "dependency": "OSD-theme=customOSD",
+    "description": "Border color"
+  },
+  "OSD-border-thick": {
+    "type": "scale",
+    "default": 2,
+    "min": 0,
+    "max": 10,
+    "step": 1,
+    "dependency": "OSD-theme=customOSD",
+    "description": "Border thickness (px)",
+    "tooltip": ""
+  },
+  "OSD-backgd-blur": {
+    "type": "scale",
+    "default": 6,
+    "min": 0,
+    "max": 48,
+    "step": 1,
+    "description": "Blur strength",
+    "tooltip": "How strongly the content behind the OSD is blurred. 0 turns blur off."
+  },
+  "light-refraction": {
+    "type": "combobox",
+    "default": "frost.webp",
+    "description": "Light refraction",
+    "tooltip": "Distorts the blurred background to imitate textured glass.",
+    "options": {
+      "None": "none",
+      "Frost": "frost.webp",
+      "Frost 2": "frost2.webp",
+      "Black ice": "black_ice.webp",
+      "Frozen": "frozen.webp",
+      "Frozen 2": "frozen2.webp",
+      "Ice": "ice.webp",
+      "Underwater": "underwater.webp",
+      "Mosaic": "mosaic.webp",
+      "Crystal": "crystal.webp",
+      "Glass brick": "glass_brick.webp",
+      "Squares": "squares.webp",
+      "Leather": "leather.webp",
+      "Bricks": "bricks.webp",
+      "Light rain": "rain.webp",
+      "Downpour": "downpour.webp",
+      "Lake": "lake.webp",
+      "Pool": "pool.webp",
+      "Diamonds": "diamonds.webp",
+      "Cubes": "cubes.webp",
+      "Hex": "hex.webp",
+      "Bee clusters": "bee.webp",
+      "Bee clusters 2": "bee2.webp",
+      "Magma": "magma.webp",
+      "Vincent": "vincent.webp",
+      "Plexiglass": "plexiglass.webp",
+      "Plexiglass 2": "plexiglass2.webp",
+      "Plexiglass 3": "plexiglass3.webp",
+      "Plexiglass 4": "plexiglass4.webp"
+    }
+  },
+  "OSD-width": {
+    "type": "scale",
+    "default": 24,
+    "min": 10,
+    "max": 60,
+    "step": 1,
+    "description": "OSD size",
+    "tooltip": "Empty space between the OSD content and the edge of the background."
+  },
+  "OSD-border-radius": {
+    "type": "scale",
+    "default": 12,
+    "min": 0,
+    "max": 60,
+    "step": 1,
+    "description": "Corner radius (px)",
+    "dependency": "OSD-theme=customOSD",
+    "tooltip": "Roundness of the background corners."
+  },
+
+  "barlevel-custom": {
+    "type": "switch",
+    "default": true,
+    "description": "Use custom level bar",
+    "tooltip": ""
+  },
+  "barlevel-style": {
+    "type": "combobox",
+    "default": "continuous",
+    "dependency": "barlevel-custom",
+    "description": "Bar style",
+    "tooltip": "",
+    "options": {
+      "Continuous": "continuous",
+      "Segmented": "segmented"
+    }
+  },
+  "OSD-layout": {
+    "type": "combobox",
+    "default": "horizontal",
+    "dependency": "barlevel-custom",
+    "description": "OSD layout",
+    "tooltip": "",
+    "options": {
+      "Horizontal": "horizontal",
+      "Vertical": "vertical",
+      "Circular": "circular"
+    }
+  },
+  "barlevel-dim": {
+    "type": "scale",
+    "default": 200,
+    "min": 100,
+    "max": 800,
+    "step": 1,
+    "dependency": "barlevel-custom",
+    "description": "Bar length (px)",
+    "tooltip": ""
+  },
+  "barlevel-thick": {
+    "type": "scale",
+    "default": 8,
+    "min": 2,
+    "max": 50,
+    "step": 1,
+    "dependency": "barlevel-custom",
+    "description": "Bar thickness (px)",
+    "tooltip": ""
+  },
+  "barlevel-radius": {
+    "type": "scale",
+    "default": 10,
+    "min": 0,
+    "max": 36,
+    "step": 1,
+    "dependency": "barlevel-custom",
+    "description": "Bar corner radius (px)",
+    "tooltip": ""
+  },
+  "barlevel-backgd-color-start": {
+    "type": "colorchooser",
+    "default": "rgba(0,0,0,0.5)",
+    "dependency": "barlevel-custom",
+    "description": "Track bar gradient color start",
+    "tooltip": ""
+  },
+  "barlevel-backgd-color-end": {
+    "type": "colorchooser",
+    "default": "rgba(0,0,0,0.5)",
+    "dependency": "barlevel-custom",
+    "description": "Track bar gradient color end",
+    "tooltip": ""
+  },
+  "barlevel-foregd-color-start": {
+    "type": "colorchooser",
+    "default": "rgba(255,255,255,1.0)",
+    "dependency": "barlevel-custom",
+    "description": "Level bar gradient color start",
+    "tooltip": ""
+  },
+  "barlevel-foregd-color-end": {
+    "type": "colorchooser",
+    "default": "rgba(255,255,255,1.0)",
+    "dependency": "barlevel-custom",
+    "description": "Level bar gradient color end",
+    "tooltip": ""
+  },
+  "barlevel-segment-width": {
+    "type": "scale",
+    "default": 8,
+    "min": 2,
+    "max": 30,
+    "step": 1,
+    "dependency": "barlevel-custom",
+    "description": "Segment length (px)",
+    "tooltip": ""
+  },
+  "barlevel-segment-gap": {
+    "type": "scale",
+    "default": 2,
+    "min": 0,
+    "max": 15,
+    "step": 1,
+    "dependency": "barlevel-custom",
+    "description": "Gap between segments (px)",
+    "tooltip": ""
+  },
+  "barlevel-segment-radius": {
+    "type": "scale",
+    "default": 2,
+    "min": 0,
+    "max": 36,
+    "step": 1,
+    "dependency": "barlevel-custom",
+    "description": "Segment corner radius (px)",
+    "tooltip": "Roundness of every segment."
+  },
+  "show-section-bar-horizontal-continuous": {
+    "type": "generic",
+    "default": false
+  },
+  "show-section-bar-horizontal-segmented": {
+    "type": "generic",
+    "default": false
+  },
+  "show-section-bar-vertical-continuous": {
+    "type": "generic",
+    "default": false
+  },
+  "show-section-bar-vertical-segmented": {
+    "type": "generic",
+    "default": false
+  },
+  "show-section-bar-circular-continuous": {
+    "type": "generic",
+    "default": false
+  },
+  "show-section-bar-circular-segmented": {
+    "type": "generic",
+    "default": false
+  },
   "font-select": {
     "type": "fontchooser",
-    "description": "Select font family",
-    "default": "Ubuntu 12"
+    "default": "Sans 12",
+    "description": "Font",
+    "tooltip": "Only the font family is used. Set size, bold and italic with the options below."
   },
   "font-size": {
     "type": "spinbutton",
@@ -136,7 +524,8 @@
     "min": 50,
     "max": 400,
     "step": 10,
-    "description": "Font size (%)"
+    "description": "Text size (%)",
+    "tooltip": "Size of the percentage number relative to the default text size."
   },
   "font-bold": {
     "type": "checkbox",
@@ -151,7 +540,8 @@
   "text-shadow-custom": {
     "type": "switch",
     "default": true,
-    "description": "Use custom text colors"
+    "description": "Customize colors",
+    "tooltip": ""
   },
   "text-color": {
     "type": "colorchooser",
@@ -163,20 +553,23 @@
     "type": "colorchooser",
     "default": "rgba(0,0,0,1.0)",
     "dependency": "text-shadow-custom",
-    "description": "Shadow color"
+    "description": "Text shadow color"
   },
+
   "icon-size": {
     "type": "spinbutton",
     "default": 100,
     "min": 50,
     "max": 400,
     "step": 10,
-    "description": "Icon scale (%)"
+    "description": "Icon size (%)",
+    "tooltip": "Size of the icon relative to the default size."
   },
   "icon-color-custom": {
     "type": "switch",
     "default": true,
-    "description": "Use custom icon colors"
+    "description": "Customize colors",
+    "tooltip": ""
   },
   "icon-color": {
     "type": "colorchooser",
@@ -190,200 +583,15 @@
     "dependency": "icon-color-custom",
     "description": "Icon shadow color"
   },
-  "OSD-backgd-color-custom": {
-    "type": "switch",
-    "default": true,
-    "description": "Custom OSD background style"
-  },
-  "OSD-backgd-color1": {
-    "type": "colorchooser",
-    "default": "rgba(0,0,0,0.3)",
-    "dependency": "show-custom-controls",
-    "description": "Background gradient color - top"
-  },
-  "OSD-backgd-color2": {
-    "type": "colorchooser",
-    "default": "rgba(0,0,0,0.3)",
-    "dependency": "show-custom-controls",
-    "description": "Background gradient color - bottom"
-  },
-  "OSD-width": {
-    "type": "scale",
-    "dependency": "OSD-backgd-color-custom",
-    "default": 24,
-    "min": 10,
-    "max": 60,
-    "step": 1,
-    "description": "Background thickness"
-  },
-  "show-custom-controls": {
-    "type": "generic",
-    "default": false
-  },
-  "show-css-controls": {
-    "type": "generic",
-    "default": false
-  },
-  "OSD-border-color": {
-    "type": "colorchooser",
-    "default": "rgba(255,255,255,0.3)",
-    "dependency": "show-custom-controls",
-    "description": "Border color"
-  },
-  "semabe-color": {
-    "type": "combobox",
-    "default": "custom-color",
-    "dependency": "OSD-backgd-color-custom",
-    "description": "Color scheme",
-    "options": {
-      "custom": "custom-color",
-      "Azure": "azure",
-      "Cinnamon": "cinnamon",
-      "Crimson": "crimson",
-      "Falcon": "falcon",
-      "Grey": "grey",
-      "Mint": "mint",
-      "Nordic": "nordic",
-      "Steel": "steel",
-      "Violet": "violet"
-    }
-  },
-  "surface-style-OSD": {
-    "type": "combobox",
-    "default": "disabled",
-    "dependency": "show-css-controls",
-    "description": "Surface style",
-    "options": {
-      "current theme": "disabled",
-      "glass pane": "pane",
-      "tempered glass": "tempered"
-    }
-  },
-  "OSD-backgd-blur": {
-    "type": "scale",
-    "dependency": "OSD-backgd-color-custom",
-    "default": 12,
-    "min": 0,
-    "max": 48,
-    "step": 1,
-    "description": "Blur strength"
-  },
-  "light-refraction": {
-    "type": "combobox",
-    "dependency": "OSD-backgd-color-custom",
-    "default": "frost.webp",
-    "description": "Light refraction",
-    "options": {
-      "no refraction": "none",
-      "frost": "frost.webp",
-      "frost 2": "frost2.webp",
-      "black ice": "black_ice.webp",
-      "frozen": "frozen.webp",
-      "frozen 2": "frozen2.webp",
-      "ice": "ice.webp",
-      "underwater": "underwater.webp",
-      "mosaic": "mosaic.webp",
-      "crystal": "crystal.webp",
-      "glass brick": "glass_brick.webp",
-      "squares": "squares.webp",
-      "leather": "leather.webp",
-      "bricks": "bricks.webp",
-      "light rain": "rain.webp",
-      "downpour": "downpour.webp",
-      "lake": "lake.webp",
-      "pool": "pool.webp",
-      "diamonds": "diamonds.webp",
-      "cubes": "cubes.webp",
-      "hex": "hex.webp",
-      "bee clusters": "bee.webp",
-      "bee clusters 2": "bee2.webp",
-      "magma": "magma.webp",
-      "Vincent": "vincent.webp",
-      "plexiglass": "plexiglass.webp",
-      "plexiglass 2": "plexiglass2.webp",
-      "plexiglass 3": "plexiglass3.webp",
-      "plexiglass 4": "plexiglass4.webp"
-    }
-  },
-  "OSD-border-thick": {
-    "type": "scale",
-    "default": 2,
-    "min": 0,
-    "max": 10,
-    "step": 1,
-    "dependency": "show-custom-controls",
-    "description": "Border thickness"
-  },
-  "OSD-border-radius": {
-    "type": "scale",
-    "default": 12,
-    "min": 0,
-    "max": 60,
-    "step": 1,
-    "dependency": "OSD-backgd-color-custom",
-    "description": "Corner radius"
-  },
-  "barlevel-custom": {
-    "type": "switch",
-    "default": true,
-    "description": "Custom level bar"
-  },
-  "OSD-orientation": {
-    "type": "combobox",
-    "default": "horizontal",
-    "description": "OSD orientation",
-    "dependency": "barlevel-custom",
-    "options": {
-      "Horizontal": "horizontal",
-      "Vertical": "vertical"
-    }
-  },
-  "barlevel-dim": {
-    "type": "scale",
-    "default": 200,
-    "min": 100,
-    "max": 800,
-    "step": 1,
-    "dependency": "barlevel-custom",
-    "description": "Bar length"
-  },
-  "barlevel-thick": {
-    "type": "scale",
-    "default": 8,
-    "min": 2,
-    "max": 50,
-    "step": 1,
-    "dependency": "barlevel-custom",
-    "description": "Bar thickness"
-  },
-  "barlevel-radius": {
-    "type": "scale",
-    "default": 10,
-    "min": 0,
-    "max": 25,
-    "step": 1,
-    "dependency": "barlevel-custom",
-    "description": "Bar corner radius"
-  },
-  "barlevel-backgd-color": {
-    "type": "colorchooser",
-    "default": "rgba(0,0,0,0.5)",
-    "dependency": "barlevel-custom",
-    "description": "Bar background color"
-  },
-  "barlevel-foregd-color": {
-    "type": "colorchooser",
-    "default": "rgba(255,255,255,1.0)",
-    "dependency": "barlevel-custom",
-    "description": "Bar fill color"
-  },
+
   "x-align": {
     "type": "scale",
-    "default": 49.9,
+    "default": 50,
     "min": 0,
     "max": 100,
     "step": 0.1,
-    "description": "Horizontal position (%)"
+    "description": "Horizontal position (%)",
+    "tooltip": "0 = left edge of the screen, 50 = centered, 100 = right edge."
   },
   "y-align": {
     "type": "scale",
@@ -391,15 +599,17 @@
     "min": 0,
     "max": 100,
     "step": 0.1,
-    "description": "Vertical position (%)"
+    "description": "Vertical position (%)",
+    "tooltip": "0 = top edge of the screen, 50 = centered, 100 = bottom edge."
   },
-  "level-time": {
+  "hide-timeout": {
     "type": "scale",
-    "default": 800,
-    "min": 0,
-    "max": 3000,
+    "default": 1500,
+    "min": 100,
+    "max": 5000,
     "step": 10,
-    "description": "Bar animation speed (ms)"
+    "description": "Time on screen (ms)",
+    "tooltip": ""
   },
   "fade-in-time": {
     "type": "scale",
@@ -407,7 +617,8 @@
     "min": 0,
     "max": 1000,
     "step": 10,
-    "description": "Fade-in duration (ms)"
+    "description": "Fade-in duration (ms)",
+    "tooltip": ""
   },
   "fade-out-time": {
     "type": "scale",
@@ -415,23 +626,35 @@
     "min": 0,
     "max": 3000,
     "step": 10,
-    "description": "Fade-out duration (ms)"
+    "description": "Fade-out duration (ms)",
+    "tooltip": ""
   },
-  "hide-timeout": {
+  "level-time": {
     "type": "scale",
-    "default": 1500,
+    "default": 800,
     "min": 0,
     "max": 3000,
     "step": 10,
-    "description": "Display duration (ms)"
+    "description": "Bar animation duration (ms)",
+    "tooltip": ""
   },
   "about-label": {
     "type": "label",
-    "description": "OSD customizer\n\nversion: 1.0"
+    "description": "OSD customizer\n\nversion: 2.0"
   },
   "website_btn": {
     "type": "button",
-    "description": "Website",
+    "description": "Visit website",
     "callback": "btn_website_pressed"
+  },
+  "issue_btn": {
+    "type": "button",
+    "description": "Report an issue",
+    "callback": "btn_issue_pressed"
+  },
+  "donate_btn": {
+    "type": "button",
+    "description": "Donate",
+    "callback": "btn_donate_pressed"
   }
 }
